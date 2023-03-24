@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ad682d2-60ab-4889-afe9-7d6523b9cb8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Enums/MarkupType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Buy2Get3Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/PercentagePromotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Services/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Services/ProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/Services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Main/Models/Buy2Get3PromotionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Main/Models/PercentagePromotionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Main/Models/ProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Main/Services/ProductServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7ad682d2-60ab-4889-afe9-7d6523b9cb8b" name="Changes" comment="1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,12 +162,35 @@
       <option name="presentableId" value="Default" />
       <updated>1679488264640</updated>
       <workItem from="1679488266109" duration="10900000" />
-      <workItem from="1679587014105" duration="21856000" />
+      <workItem from="1679587014105" duration="22192000" />
     </task>
+    <task id="LOCAL-00001" summary="1.0">
+      <created>1679672280683</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679672280683</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest_onePercent.ic" NAME="PercentagePromotionTest.onePercent Coverage Results" MODIFIED="1679662750482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -230,7 +229,7 @@
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest_negativePercentage.ic" NAME="PercentagePromotionTest.negativePercentage Coverage Results" MODIFIED="1679662546722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest.ic" NAME="ProductTest Coverage Results" MODIFIED="1679671190662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest.ic" NAME="ProductTest Coverage Results" MODIFIED="1679672186599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest_setVolumeTests.ic" NAME="ProductTest.setVolumeTests Coverage Results" MODIFIED="1679671838382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
