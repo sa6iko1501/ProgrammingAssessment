@@ -17,7 +17,7 @@ public class ProductService {
         List<Product> productsToKeep = new ArrayList<>();
         for(int i=0;i< products.length;i++){
 
-            //Find out which products are ordered, set their quantities and put them in a new List
+            //Find out which products are ordered, set their volumes and put them in a new List
            if(products[i]>0){
                productList.get(i).setVolume(products[i]);
                productsToKeep.add(productList.get(i));
@@ -33,6 +33,7 @@ public class ProductService {
             if(productsToKeep.get(i).getPromotion()!=null){
                 System.out.println("\t"+productsToKeep.get(i).getPromotion().calculatePromotionBasedOnType(productsToKeep.get(i)));
             }
+            System.out.println("\tTotal: "+df.format(productsToKeep.get(i).getCost()*productsToKeep.get(i).getVolume())+" EUR");
             System.out.println("\n");
 
         }
@@ -42,7 +43,7 @@ public class ProductService {
     }
    public String figureMarkupType(Product product){
 
-        //We will use Product.markup as a hard value or as a percentage based on Product.MarkupType
+        //Will use Product.markup as a hard value or as a percentage based on Product.MarkupType
        if(product.getMarkupType()==MarkupType.PERCENTAGE){
            return "Base unit price: "+df.format(markupPercentage(product,product.getCost(), product.getMarkup()))+" EUR/unit";
        }
@@ -53,20 +54,19 @@ public class ProductService {
    }
 
     private double markupPercentage(Product product,double cost,double percent){
+
         //Calculate cost with the markup percentage and change it in the product
         double percentForCalc = (double)percent/100.0;
         percentForCalc = Double.parseDouble(df.format(percentForCalc));
-        double newCost = (cost*percentForCalc);
-        newCost = Double.parseDouble(df.format(newCost));
+        double newCost = cost+(cost*percentForCalc);
         product.setCost(newCost);
-
         return newCost;
     }
 
     private double markupPerUnit(Product product,double cost,double perUnit){
+
         //Calculate cost with the markup per unit and change it in the product
         double newCost = (cost + perUnit);
-        df.format(newCost);
         product.setCost(newCost);
         return newCost;
     }

@@ -22,62 +22,40 @@ class ProductTest {
     public void ExceptionsFromConstructor(){
         //Volume <0
         assertThrows(IllegalArgumentException.class,
-                ()-> {
-                    new Product("Beer",0.78,MarkupType.PER_UNIT,null,20,-1);
-                });
+                ()-> new Product("Beer",0.78,MarkupType.PER_UNIT,null,20,-1));
         //Volume Negative Edge
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("Beer",0.78,MarkupType.PER_UNIT,null,20,Integer.MIN_VALUE);
-                });
+                ()-> new Product("Beer",0.78,MarkupType.PER_UNIT,null,20,Integer.MIN_VALUE));
         //Markup = 0
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("Beer",0.78,MarkupType.PER_UNIT,null,0,50);
-                });
+                ()-> new Product("Beer",0.78,MarkupType.PER_UNIT,null,0,50));
         //Markup Negative Edge
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("Beer",0.78,MarkupType.PER_UNIT,null,Integer.MIN_VALUE,50);
-                });
+                ()-> new Product("Beer",0.78,MarkupType.PER_UNIT,null,Integer.MIN_VALUE,50));
         //Cost = 0
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("Beer",0,MarkupType.PER_UNIT,null,0,50);
-                });
+                ()-> new Product("Beer",0,MarkupType.PER_UNIT,null,0,50));
         //Cost Negative Edge
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("Beer",Integer.MIN_VALUE,MarkupType.PER_UNIT,null,0,50);
-                });
+                ()-> new Product("Beer",Integer.MIN_VALUE,MarkupType.PER_UNIT,null,0,50));
         //MarkupType = NULL
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("Beer",0.78,null,null,0,50);
-                });
+                ()-> new Product("Beer",0.78,null,null,0,50));
         //Name is null
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product(null,0.78,MarkupType.PER_UNIT,null,0,50);
-                });
+                ()-> new Product(null,0.78,MarkupType.PER_UNIT,null,0,50));
         //Name is Empty
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    new Product("",0.78,MarkupType.PER_UNIT,null,0,50);
-                });
+                ()-> new Product("",0.78,MarkupType.PER_UNIT,null,0,50));
     }
 
     @Test
     public void setVolumeTests(){
         Product product =  new Product("Beer",0.78,MarkupType.PER_UNIT,null,0.3,50);
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setVolume(-1);
-                });
+                ()-> product.setVolume(-1));
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setVolume(Integer.MIN_VALUE);
-                });
+                ()-> product.setVolume(Integer.MIN_VALUE));
     }
 
     @Test
@@ -85,37 +63,27 @@ class ProductTest {
         Product product =  new Product("Beer",0.78,MarkupType.PER_UNIT,null,0.3,50);
         //Cost = 0
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setCost(0);
-                });
+                ()-> product.setCost(0));
         //Cost Negative Edge
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setCost(Integer.MIN_VALUE);
-                });
+                ()-> product.setCost(Integer.MIN_VALUE));
     }
     @Test
     public void setMarkupTests(){
         Product product =  new Product("Beer",0.78,MarkupType.PER_UNIT,null,0.3,50);
         //Markup = 0
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setMarkup(0);
-                });
+                ()-> product.setMarkup(0));
         //Markup  Negative Edge
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setMarkup(Integer.MIN_VALUE);
-                });
+                ()-> product.setMarkup(Integer.MIN_VALUE));
     }
 
     @Test
-    public void setMarkupType(){
+    public void setMarkupTypeTests(){
         //MarkupType = null
         Product product =  new Product("Beer",0.78,MarkupType.PER_UNIT,null,0.3,50);
         assertThrows(IllegalArgumentException.class,
-                ()->{
-                    product.setMarkupType(null);
-                });
+                ()-> product.setMarkupType(null));
     }
 }

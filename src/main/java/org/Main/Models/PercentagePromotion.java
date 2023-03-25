@@ -1,6 +1,6 @@
 package org.Main.Models;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -38,8 +38,9 @@ public class PercentagePromotion implements Promotion{
         DecimalFormat df = new DecimalFormat("#0.00");
         double cost = product.getCost();
         double discountedCost=cost-(cost*percentage/100.0);
-        discountedCost = Double.parseDouble(df.format(discountedCost));
         product.setCost(discountedCost);
+        discountedCost = Double.parseDouble(df.format(discountedCost));
+
         return "Promotion -"+percentage+"% off : "+df.format(discountedCost)+" EUR/unit";
     }
 }

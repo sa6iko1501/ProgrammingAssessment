@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ad682d2-60ab-4889-afe9-7d6523b9cb8b" name="Changes" comment="1.01">
+    <list default="true" id="7ad682d2-60ab-4889-afe9-7d6523b9cb8b" name="Changes" comment="ClientService and fixes">
       <change afterPath="$PROJECT_DIR$/src/test/java/org/Main/Models/ClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Main/Services/ClientServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Models/Buy2Get3Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Buy2Get3Promotion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Models/PercentagePromotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/PercentagePromotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Models/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Services/ProducerService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Main/Models/Buy2Get3PromotionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Main/Models/Buy2Get3PromotionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Main/Models/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Main/Models/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Main/Services/ClientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Main/Services/ClientServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Main/Services/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Main/Services/ProductServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +38,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -67,6 +75,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/InteliJ Projects/agency",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,34 +92,33 @@
       <recent name="org.Main.Services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClientServiceTest.calculateClientDiscountTest">
-    <configuration name="ClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductTest">
+    <configuration name="Buy2Get3PromotionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgrammingAssessment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Main.Services.*" />
+          <option name="PATTERN" value="org.Main.Models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.Main.Services" />
-      <option name="MAIN_CLASS_NAME" value="org.Main.Services.ClientServiceTest" />
+      <option name="PACKAGE_NAME" value="org.Main.Models" />
+      <option name="MAIN_CLASS_NAME" value="org.Main.Models.Buy2Get3PromotionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientServiceTest.calculateClientDiscountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProgrammingAssessment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Main.Services.*" />
+          <option name="PATTERN" value="org.Main.Models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.Main.Services" />
-      <option name="MAIN_CLASS_NAME" value="org.Main.Services.ClientServiceTest" />
-      <option name="METHOD_NAME" value="calculateClientDiscountTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.Main.Models" />
+      <option name="MAIN_CLASS_NAME" value="org.Main.Models.ClientTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClientServiceTest.calculateClientDiscountTest" />
-        <item itemvalue="JUnit.ClientServiceTest" />
-        <item itemvalue="JUnit.ProductServiceTest" />
         <item itemvalue="JUnit.ProductTest" />
         <item itemvalue="JUnit.PercentagePromotionTest" />
+        <item itemvalue="JUnit.ClientTest" />
+        <item itemvalue="JUnit.Buy2Get3PromotionTest" />
+        <item itemvalue="JUnit.ProductServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +187,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679488264640</updated>
       <workItem from="1679488266109" duration="10900000" />
-      <workItem from="1679587014105" duration="30473000" />
+      <workItem from="1679587014105" duration="31324000" />
+      <workItem from="1679682463888" duration="16311000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1679672280683</created>
@@ -195,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679673572388</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ClientService changes">
+      <created>1679681258950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679681258950</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,16 +231,39 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0" />
     <MESSAGE value="1.01" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.01" />
+    <MESSAGE value="ClientService changes" />
+    <MESSAGE value="ClientService and fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ClientService and fixes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest_onePercent.ic" NAME="PercentagePromotionTest.onePercent Coverage Results" MODIFIED="1679662750482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientTest_setVolume30000Discount.ic" NAME="ClientTest.setVolume30000Discount Coverage Results" MODIFIED="1679755585454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest.ic" NAME="ProductServiceTest Coverage Results" MODIFIED="1679769415840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest_InitializeProductListTest.ic" NAME="ProductServiceTest.InitializeProductListTest Coverage Results" MODIFIED="1679668514946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientTest.ic" NAME="ClientTest Coverage Results" MODIFIED="1679769377680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest_PerUnitMarkupAndPromotion.ic" NAME="ProductServiceTest.PerUnitMarkupAndPromotion Coverage Results" MODIFIED="1679663924329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$Buy2Get3PromotionTest.ic" NAME="Buy2Get3PromotionTest Coverage Results" MODIFIED="1679769370192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest_setVolumeTests.ic" NAME="ProductTest.setVolumeTests Coverage Results" MODIFIED="1679671838382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$Buy2Get3PromotionTest_TwentyTwo.ic" NAME="Buy2Get3PromotionTest.TwentyTwo Coverage Results" MODIFIED="1679659774951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest.ic" NAME="PercentagePromotionTest Coverage Results" MODIFIED="1679662863181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest.ic" NAME="PercentagePromotionTest Coverage Results" MODIFIED="1679769385510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientServiceTest_calculateClientDiscountTest.ic" NAME="ClientServiceTest.calculateClientDiscountTest Coverage Results" MODIFIED="1679676636551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -236,8 +275,8 @@
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$Buy2Get3PromotionTest_TwentyOne.ic" NAME="Buy2Get3PromotionTest.TwentyOne Coverage Results" MODIFIED="1679659819762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest.ic" NAME="ProductServiceTest Coverage Results" MODIFIED="1679677079884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>org.Main.Services.*</FILTER>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientTest_setVolumeDiscount10000.ic" NAME="ClientTest.setVolumeDiscount10000 Coverage Results" MODIFIED="1679755490593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest_percentageHigherOrEqualTo100.ic" NAME="PercentagePromotionTest.percentageHigherOrEqualTo100 Coverage Results" MODIFIED="1679662648304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
@@ -245,14 +284,14 @@
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest_ExceptionsFromConstructor.ic" NAME="ProductTest.ExceptionsFromConstructor Coverage Results" MODIFIED="1679671846106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest_InitializeProductListTest.ic" NAME="ProductServiceTest.InitializeProductListTest Coverage Results" MODIFIED="1679668514946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>org.Main.Services.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest_MarkupPerUnitTest.ic" NAME="ProductServiceTest.MarkupPerUnitTest Coverage Results" MODIFIED="1679663797965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Services.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductServiceTest_PerUnitMarkupAndPromotion.ic" NAME="ProductServiceTest.PerUnitMarkupAndPromotion Coverage Results" MODIFIED="1679663924329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>org.Main.Services.*</FILTER>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientTest_setBasicClientDiscountTest.ic" NAME="ClientTest.setBasicClientDiscountTest Coverage Results" MODIFIED="1679755281702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientTest_constructorExceptions.ic" NAME="ClientTest.constructorExceptions Coverage Results" MODIFIED="1679755359799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientServiceTest_calculateVolumeDiscountTest.ic" NAME="ClientServiceTest.calculateVolumeDiscountTest Coverage Results" MODIFIED="1679675454597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Services.*</FILTER>
@@ -263,16 +302,22 @@
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest.ic" NAME="ProductTest Coverage Results" MODIFIED="1679672186599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest_setVolumeTests.ic" NAME="ProductTest.setVolumeTests Coverage Results" MODIFIED="1679671838382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientTest_constructorTest.ic" NAME="ClientTest.constructorTest Coverage Results" MODIFIED="1679754889938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientServiceTest_applyVolumeDiscountTest.ic" NAME="ClientServiceTest.applyVolumeDiscountTest Coverage Results" MODIFIED="1679758864205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Services.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$PercentagePromotionTest_setPercentageToNegativeOr0.ic" NAME="PercentagePromotionTest.setPercentageToNegativeOr0 Coverage Results" MODIFIED="1679662658137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.Main.Models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest_setMarkupTypeTests.ic" NAME="ProductTest.setMarkupTypeTests Coverage Results" MODIFIED="1679769397543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ProgrammingAssessment$ProductTest_createProduct.ic" NAME="ProductTest.createProduct Coverage Results" MODIFIED="1679670647755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientServiceTest.ic" NAME="ClientServiceTest Coverage Results" MODIFIED="1679677035516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProgrammingAssessment$ClientServiceTest.ic" NAME="ClientServiceTest Coverage Results" MODIFIED="1679769405901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.Main.Services.*</FILTER>
     </SUITE>
   </component>

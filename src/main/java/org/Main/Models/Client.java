@@ -17,11 +17,10 @@ public class Client {
     private List<Product> products;
 
 
-    public void addProduct(Product product){
-        this.products.add(product);
-    }
-
     public Client(int id, double basicClientDiscount, double volumeDiscount10000, double volumeDiscount30000,List<Product> products){
+        if(id<=0){
+            throw new IllegalArgumentException("Client id cannot be lower or equal to 0");
+        }
         if(basicClientDiscount<0){
             throw new IllegalArgumentException("Client discount cannot be lower than 0");
         }
