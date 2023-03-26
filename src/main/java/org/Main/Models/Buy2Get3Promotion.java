@@ -1,5 +1,7 @@
 package org.Main.Models;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 
 public class Buy2Get3Promotion implements Promotion{
@@ -10,7 +12,7 @@ public class Buy2Get3Promotion implements Promotion{
         //Assuming volume of order is set with the promotion in mind
         int volume = product.getVolume();
         double cost = product.getCost();
-        DecimalFormat df = new DecimalFormat("#0.00");
+        DecimalFormat df = new DecimalFormat("#0.00", new DecimalFormatSymbols(Locale.US));
         int numFullTrios = volume / 3;
         int numIndividuals = volume % 3;
         double discountedCost = cost * 2.0;

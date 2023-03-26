@@ -5,14 +5,16 @@ import lombok.Setter;
 import org.Main.Enums.MarkupType;
 import org.Main.Models.Product;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 @Getter
 @Setter
 public class ProductService {
 
-    private final DecimalFormat df = new DecimalFormat("#0.00");
+    private final DecimalFormat df = new DecimalFormat("#0.00", new DecimalFormatSymbols(Locale.US));
     public List<Product> initializeProductList(int[]products, List<Product> productList){
         List<Product> productsToKeep = new ArrayList<>();
         for(int i=0;i< products.length;i++){

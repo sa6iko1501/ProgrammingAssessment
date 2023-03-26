@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 
 @Getter
@@ -35,7 +37,7 @@ public class PercentagePromotion implements Promotion{
 
     @Override
     public String calculatePromotionBasedOnType(Product product) {
-        DecimalFormat df = new DecimalFormat("#0.00");
+        DecimalFormat df = new DecimalFormat("#0.00", new DecimalFormatSymbols(Locale.US));
         double cost = product.getCost();
         double discountedCost=cost-(cost*percentage/100.0);
         product.setCost(discountedCost);

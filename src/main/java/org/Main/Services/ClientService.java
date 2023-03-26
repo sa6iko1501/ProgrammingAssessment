@@ -3,11 +3,13 @@ package org.Main.Services;
 import org.Main.Models.Client;
 import org.Main.Models.Product;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.List;
+import java.util.Locale;
 
 public class ClientService {
     private final ProductService productService = new ProductService();
-    private final DecimalFormat df = new DecimalFormat("#0.00");
+    private final DecimalFormat df = new DecimalFormat("#0.00", new DecimalFormatSymbols(Locale.US));
     public double finalizeOrder(Client client, int[] products, List<Product> productList){
         double total;
         client.setProducts(productService.initializeProductList(products,productList));
