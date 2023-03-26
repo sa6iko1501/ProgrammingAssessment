@@ -23,26 +23,26 @@ public class ClientService {
             int oldPercent = (int)client.getBasicClientDiscount();
             client.setBasicClientDiscount(calculateClientDiscount(client.getBasicClientDiscount()));
             total = applyClientDiscount(client,total);
-            System.out.println("Basic Client Discount - "+oldPercent+
-                    "% Total: "+df.format(total));
+            System.out.println("\tBasic Client Discount - "+oldPercent+
+                    "% Total: "+df.format(total)+" EUR");
         }
         if(total>=10000 && client.getVolumeDiscount10000()!=0 && total<30000){
             int oldPercent = (int)client.getVolumeDiscount10000();
             client.setVolumeDiscount10000(calculateVolumeDiscount(oldPercent));
             total = applyVolumeDiscount(client,total);
-            System.out.println("Applied Volume Discount for orders over 10 000 EUR : -"+oldPercent+"%");
+            System.out.println("\tApplied Volume Discount for orders over 10 000 EUR : -"+oldPercent+"%");
         }
         if(total>30000 && client.getVolumeDiscount30000()!=0){
             int oldPercent = (int)client.getVolumeDiscount30000();
             client.setVolumeDiscount30000(calculateVolumeDiscount(oldPercent));
             total = applyVolumeDiscount(client,total);
-            System.out.println("Applied Volume Discount for orders over 30 000 EUR : -"+oldPercent+"%");
+            System.out.println("\tApplied Volume Discount for orders over 30 000 EUR : -"+oldPercent+"%");
         }
         //Print the Total price of the order after all applicable client and product promotions have been applied
         System.out.println("Order Total: "+df.format(total)+" EUR");
         return total;
     }
-    public double calculateTotal(List<Product> productList){
+    private double calculateTotal(List<Product> productList){
         //Calculates the Total price of the order
         double total = 0;
         for(int i=0;i<productList.size();i++){
@@ -50,7 +50,7 @@ public class ClientService {
         }
         return Double.parseDouble(df.format(total));
     }
-    public double calculateClientDiscount(double percentage){
+    private double calculateClientDiscount(double percentage){
         //Converts the basic client percentage ex. 5 -> 0.05; 25->0.25
         if(percentage>99.0){
             throw new IllegalArgumentException("Percentage of Client Discount cannot be more than 100");
@@ -68,7 +68,7 @@ public class ClientService {
         }
     }
 
-    public double calculateVolumeDiscount(double percentage){
+    private double calculateVolumeDiscount(double percentage){
 
         //Converts the volume discount ex. 5->0.05; 25->0.25
         if(percentage>99.0){
@@ -86,7 +86,7 @@ public class ClientService {
             return 0.0;
         }
     }
-    public double applyClientDiscount(Client client, double total){
+    private double applyClientDiscount(Client client, double total){
         if(total<=0){
             throw new IllegalArgumentException("total cannot be lower or equal to 0");
         }
@@ -95,7 +95,7 @@ public class ClientService {
         return newTotal;
     }
 
-    public double applyVolumeDiscount(Client client, double total){
+    private double applyVolumeDiscount(Client client, double total){
         if(total<=0){
             throw new IllegalArgumentException("total cannot be lower or equal to 0");
         }

@@ -38,6 +38,7 @@ class ProductServiceTest {
         assertEquals(3000,initializedList.get(1).getVolume());
         assertEquals(0.59,Double.parseDouble(df.format(initializedList.get(0).getCost())));
         assertEquals(1.07,Double.parseDouble(df.format(initializedList.get(1).getCost())));
+
         //Test for input with 10 000 units of product A and 20 000 units of product C
         int[] productVolumes2 = {10000,0,20000,0};
         List<Product> initializedList2 = productService.initializeProductList(productVolumes2,products);
