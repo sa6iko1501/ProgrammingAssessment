@@ -26,17 +26,21 @@ public class ClientService {
             System.out.println("\tBasic Client Discount - "+oldPercent+
                     "% Total: "+df.format(total)+" EUR");
         }
+
+        //Check to see if the client and order qualify for any volume promotions
         if(total>=10000 && client.getVolumeDiscount10000()!=0 && total<30000){
             int oldPercent = (int)client.getVolumeDiscount10000();
             client.setVolumeDiscount10000(calculateVolumeDiscount(oldPercent));
             total = applyVolumeDiscount(client,total);
             System.out.println("\tApplied Volume Discount for orders over 10 000 EUR : -"+oldPercent+"%");
         }
-        if(total>30000 && client.getVolumeDiscount30000()!=0){
-            int oldPercent = (int)client.getVolumeDiscount30000();
-            client.setVolumeDiscount30000(calculateVolumeDiscount(oldPercent));
-            total = applyVolumeDiscount(client,total);
-            System.out.println("\tApplied Volume Discount for orders over 30 000 EUR : -"+oldPercent+"%");
+        else{
+            if(total>30000 && client.getVolumeDiscount30000()!=0){
+                int oldPercent = (int)client.getVolumeDiscount30000();
+                client.setVolumeDiscount30000(calculateVolumeDiscount(oldPercent));
+                total = applyVolumeDiscount(client,total);
+                System.out.println("\tApplied Volume Discount for orders over 30 000 EUR : -"+oldPercent+"%");
+            }
         }
         //Print the Total price of the order after all applicable client and product promotions have been applied
         System.out.println("Order Total: "+df.format(total)+" EUR");
